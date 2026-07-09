@@ -1,0 +1,24 @@
+formulas:
+  File: link(file, title)
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.hasLink(this.file)
+        - '!file.tags.contains("index")'
+    order:
+      - formula.File
+      - file.ctime
+      - file.mtime
+    sort:
+      - property: file.mtime
+        direction: DESC
+      - property: formula.File
+        direction: ASC
+      - property: title
+        direction: ASC
+    markers: bullet
+    indentProperties: false
+    columnSize:
+      formula.File: 266

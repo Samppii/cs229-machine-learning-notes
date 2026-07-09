@@ -1,0 +1,25 @@
+# --- Obsidian: per-machine UI state ---
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspace.json.bak
+
+# --- Obsidian: third-party plugin & theme binaries ---
+# Enabled plugin list is tracked in .obsidian/community-plugins.json;
+# reinstall the plugins from Obsidian's community browser.
+.obsidian/plugins/
+.obsidian/themes/
+
+# --- Local tooling / working notes (not part of the vault) ---
+.claude/
+CLAUDE.md
+HANDOFF.md
+
+# --- Raw lecture transcripts (source material, not my own notes) ---
+*source.md
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+.trash/
+*.tmp

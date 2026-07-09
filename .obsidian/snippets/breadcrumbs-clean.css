@@ -1,0 +1,18 @@
+/* Strip the boxed banner around the Breadcrumbs trail — leave just the links */
+.BC-trail-view,
+.BC-page-views,
+.BC-page-views-inner {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  background: none !important;
+  padding: 0 !important;
+  margin: 0.15em 0 !important;
+}
+
+/* Lay the path links out inline with a separator instead of stacked */
+.BC-trail-view-path {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}

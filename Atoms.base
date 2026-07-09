@@ -1,0 +1,18 @@
+views:
+  - type: table
+    name: All Atoms
+    filters:
+      and:
+        - file.tags.contains("atom")
+    order:
+      - file.name
+      - tags
+      - dateModified
+  - type: table
+    name: Archive
+    filters:
+      and:
+        - file.folder == "archive"
+    order:
+      - file.name
+      - tags

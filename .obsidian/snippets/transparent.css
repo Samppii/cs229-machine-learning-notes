@@ -1,0 +1,15 @@
+body {
+  background-color: transparent !important;
+}
+
+.app-container {
+  background-color: rgba(30, 30, 30, 0.85) !important;
+}
+
+.workspace-leaf {
+  background-color: transparent !important;
+}
+
+.modal-bg {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}

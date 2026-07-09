@@ -1,0 +1,35 @@
+.markdown-embed-title {
+	display: none;
+}
+
+:has(.naked-embeds) .markdown-preview-view .markdown-embed-content> :first-child {
+	margin-top: 0;
+}
+
+:has(.naked-embeds) .markdown-preview-view .markdown-embed-content> :last-child {
+	margin-bottom: 0;
+}
+
+:has(.naked-embeds) .markdown-preview-view .markdown-embed {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+:has(.naked-embeds) .markdown-preview-view .markdown-embed-content {
+	max-height: unset;
+	background-color: var(--background-secondary);
+}
+
+:has(.naked-embeds) .markdown-embed-link {
+	color: var(--text-faint) !important;
+}
+
+:has(.naked-embeds) .markdown-embed-link:hover {
+	color: var(--text-accent) !important;
+}
+
+:has(.naked-embeds) .cm-s-obsidian .markdown-embed :is(h1, h2, h3, h4, h5, h6, hr),
+:has(.naked-embeds) .markdown-preview-view .markdown-embed :is(h1, h2, h3, h4, h5, h6, hr) {
+	display: none;
+}
