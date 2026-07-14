@@ -15,7 +15,7 @@ units:
 
 ## Summary
 
-You are given only $X$ — **no labels** — and must find interesting structure in the data.
+You are given only $X$ - **no labels** - and must find interesting structure in the data.
 
 - [[Clustering]] (K-means)
 - [[Independent components analysis]] (the cocktail party problem)

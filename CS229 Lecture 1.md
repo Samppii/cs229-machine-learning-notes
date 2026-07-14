@@ -15,12 +15,12 @@ up:
 
 ## What the lecture covers
 
-- **Two definitions of ML** — [[Machine learning]] (Arthur Samuel) and the [[Well-posed learning problem]] framing (Tom Mitchell).
+- **Two definitions of ML** - [[Machine learning]] (Arthur Samuel) and the [[Well-posed learning problem]] framing (Tom Mitchell).
 - **The five topics of the course:**
-  1. [[Supervised learning]] — with [[Regression]], [[Classification]], and [[Features]]
-  2. [[Learning theory]] — ML strategy
+  1. [[Supervised learning]] - with [[Regression]], [[Classification]], and [[Features]]
+  2. [[Learning theory]] - ML strategy
   3. [[Deep learning]]
-  4. [[Unsupervised learning]] — with [[Clustering]] and [[Independent components analysis]]
+  4. [[Unsupervised learning]] - with [[Clustering]] and [[Independent components analysis]]
   5. [[Reinforcement learning]]
 
 ## Notes in this lecture

@@ -16,7 +16,7 @@ units:
 
 ## Summary
 
-No labeled right answer — instead a **reward signal** ("good dog / bad dog"). The agent acts, gets rewarded or penalized, and over time learns to do more of the good and less of the bad.
+No labeled right answer - instead a **reward signal** ("good dog / bad dog"). The agent acts, gets rewarded or penalized, and over time learns to do more of the good and less of the bad.
 
 Examples: Stanford autonomous helicopter, robot dog climbing obstacles, Atari, AlphaGo. Ng is as excited about robotics / logistics applications as about game-playing.
 

@@ -14,7 +14,7 @@ units:
 
 ## Summary
 
-A general **optimizer**: hand it any function and it finds a minimum. Here it minimizes the [[Cost function]] $J(\theta)$, but it is **not** specific to [[Linear regression]] — the same procedure powers logistic regression, neural nets, etc. (Regression can also be solved with no gradient descent at all, via the normal equations.)
+A general **optimizer**: hand it any function and it finds a minimum. Here it minimizes the [[Cost function]] $J(\theta)$, but it is **not** specific to [[Linear regression]] - the same procedure powers logistic regression, neural nets, etc. (Regression can also be solved with no gradient descent at all, via the normal equations.)
 
 **Picture:** $J(\theta)$ is a surface (a hill); height = how wrong you are. Start anywhere, find the steepest downhill direction, take a small step, repeat until you reach the bottom.
 
@@ -22,11 +22,11 @@ A general **optimizer**: hand it any function and it finds a minimum. Here it mi
 
 $$\theta_j := \theta_j - \alpha \frac{\partial}{\partial \theta_j} J(\theta)$$
 
-- $:=$ is **assignment** (an update), not an equality claim — like `theta_j = theta_j - ...` in code.
+- $:=$ is **assignment** (an update), not an equality claim - like `theta_j = theta_j - ...` in code.
 - $\alpha$ = the [[Learning rate]] (step size).
 - $\frac{\partial}{\partial \theta_j} J(\theta)$ = the gradient in the $\theta_j$ direction; it points **uphill**.
 - The **minus** flips uphill → downhill (answers "why subtract, not add?").
-- $\partial$ (partial, not $d$) because $J$ depends on several $\theta$'s — differentiate w.r.t. $\theta_j$ while holding the other $\theta$'s fixed.
+- $\partial$ (partial, not $d$) because $J$ depends on several $\theta$'s - differentiate w.r.t. $\theta_j$ while holding the other $\theta$'s fixed.
 
 ## The computed gradient (single example)
 
@@ -44,4 +44,4 @@ $$\theta_j := \theta_j - \alpha\left(h_\theta(x) - y\right)x_j$$
 
 ## Convergence
 
-Because $J(\theta)$ for linear regression is a sum of squares, it is **convex** — see [[Convexity]]. So gradient descent always reaches the **global** minimum regardless of where $\theta$ starts (init to zeros or randomly — doesn't matter), provided the [[Learning rate]] is sane. **Stopping criterion:** plot $J(\theta)$ over iterations; when it flattens, you've converged.
+Because $J(\theta)$ for linear regression is a sum of squares, it is **convex** - see [[Convexity]]. So gradient descent always reaches the **global** minimum regardless of where $\theta$ starts (init to zeros or randomly - doesn't matter), provided the [[Learning rate]] is sane. **Stopping criterion:** plot $J(\theta)$ over iterations; when it flattens, you've converged.

@@ -16,4 +16,4 @@ units:
 
 ## Summary
 
-A [[Supervised learning]] problem where the label $Y$ is **continuous**. Example: predict housing price from square footage — fit a line (or a quadratic) to the data and read the predicted price off the curve.
+A [[Supervised learning]] problem where the label $Y$ is **continuous**. Example: predict housing price from square footage - fit a line (or a quadratic) to the data and read the predicted price off the curve.

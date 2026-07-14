@@ -17,4 +17,4 @@ units:
 
 ## Summary
 
-**ICA** solves the **cocktail party problem**: several microphones record several overlapping voices, and ICA separates the mixture into clean, single-speaker tracks. An [[Unsupervised learning]] technique — implemented in a later homework.
+**ICA** solves the **cocktail party problem**: several microphones record several overlapping voices, and ICA separates the mixture into clean, single-speaker tracks. An [[Unsupervised learning]] technique - implemented in a later homework.

@@ -7,7 +7,7 @@ title: Home
 
 # Home
 
-The Vault's front door. This is a Map of Content (MOC) — a hand-curated index note that links out to your topics. In a Zettelkasten you navigate by *links*, not folders.
+The Vault's front door. This is a Map of Content (MOC) - a hand-curated index note that links out to your topics. In a Zettelkasten you navigate by *links*, not folders.
 
 ## How This Vault Works
 

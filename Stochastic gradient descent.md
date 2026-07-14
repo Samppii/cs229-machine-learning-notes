@@ -25,13 +25,13 @@ Each step reacts to a single example → a **noisy / zigzag** path. Any one step
 
 ## Never fully converges
 
-Pure SGD **oscillates around the minimum forever** — each new example keeps nudging $\theta$. Fix: **slowly decrease the [[Learning rate]] $\alpha$ over time** → smaller zigzags → it tightens into a smaller region around the minimum.
+Pure SGD **oscillates around the minimum forever** - each new example keeps nudging $\theta$. Fix: **slowly decrease the [[Learning rate]] $\alpha$ over time** → smaller zigzags → it tightens into a smaller region around the minimum.
 
-## Batch vs stochastic — when to use which
+## Batch vs stochastic - when to use which
 
-- **Small dataset** (hundreds–few thousand): use **batch** — accurate, settles, "one less thing to fiddle with."
+- **Small dataset** (hundreds–few thousand): use **batch** - accurate, settles, "one less thing to fiddle with."
 - **Large dataset** (hundreds of thousands+, or when one full pass is too slow): use **stochastic** (or [[Mini-batch gradient descent]]).
-- The real rule isn't a fixed number — it's *"does one full scan of the data hurt?"* If no → batch. If yes → the dataset is "large," go stochastic/mini-batch. **"Large" is relative to your compute.**
+- The real rule isn't a fixed number - it's *"does one full scan of the data hurt?"* If no → batch. If yes → the dataset is "large," go stochastic/mini-batch. **"Large" is relative to your compute.**
 
 Spectrum:
 

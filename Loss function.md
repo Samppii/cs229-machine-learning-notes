@@ -23,7 +23,7 @@ A three-rung vocabulary ladder that recurs everywhere in ML. Each rung wraps the
 | --- | --- | --- | --- |
 | **error / residual** | one example | $h(x^{(i)}) - y^{(i)}$ | raw, **signed** |
 | **loss** | one example | $\left(h(x^{(i)}) - y^{(i)}\right)^2$ | squared → always $\ge 0$, punishes big misses |
-| **cost** | whole dataset | $J(\theta)$ | the losses summed — see [[Cost function]] |
+| **cost** | whole dataset | $J(\theta)$ | the losses summed - see [[Cost function]] |
 
 - **Error** can be negative (predicted too high or too low). Summing raw errors lets them cancel, which is why the **loss** squares first.
 - **Loss** is per-example; **cost** aggregates loss over all $m$ examples.

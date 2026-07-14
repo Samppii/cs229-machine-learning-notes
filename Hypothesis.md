@@ -16,7 +16,7 @@ units:
 
 ## Summary
 
-The **model** — the function $h$ that maps inputs to a predicted output. For [[Linear regression]] it's linear (technically affine) in the [[Features]]. Three **equivalent** forms — same equation, three costumes:
+The **model** - the function $h$ that maps inputs to a predicted output. For [[Linear regression]] it's linear (technically affine) in the [[Features]]. Three **equivalent** forms - same equation, three costumes:
 
 - One feature: $h(x) = \theta_0 + \theta_1 x_1$ (a line).
 - Two features ($x_1$ = size, $x_2$ = #bedrooms): $h(x) = \theta_0 + \theta_1 x_1 + \theta_2 x_2$.
@@ -27,7 +27,7 @@ So *expanded → sigma → vector* all say the same thing. $\theta$ and $x$ are 
 
 ## Intercept vs. weights
 
-- $\theta_0$ = **baseline / intercept** — no feature attached (that's what $x_0 = 1$ buys you).
+- $\theta_0$ = **baseline / intercept** - no feature attached (that's what $x_0 = 1$ buys you).
 - $\theta_1, \theta_2, \dots$ = **weights**, one per feature. Each weight's sign + magnitude = the direction and strength of that feature's effect.
 
-The learning problem is: pick the $\theta$ that makes $h(x) \approx y$ across the training set — made precise by the [[Cost function]].
+The learning problem is: pick the $\theta$ that makes $h(x) \approx y$ across the training set - made precise by the [[Cost function]].

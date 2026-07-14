@@ -26,6 +26,6 @@ $$\theta_j := \theta_j - \alpha \sum_{i=1}^{m}\left(h_\theta(x^{(i)}) - y^{(i)}\
 ## Trade-off
 
 - **Upside:** each step uses the full dataset → the true, accurate downhill direction → a smooth path that converges and settles. See [[Convexity]] for why it lands on the global minimum.
-- **Downside — slow on large data:** to take even *one* step you must scan all $m$ examples. With millions of examples or terabytes of data this is prohibitive (Ng: you might never finish a single step).
+- **Downside - slow on large data:** to take even *one* step you must scan all $m$ examples. With millions of examples or terabytes of data this is prohibitive (Ng: you might never finish a single step).
 
 This cost is exactly what [[Stochastic gradient descent]] and [[Mini-batch gradient descent]] trade accuracy to avoid.

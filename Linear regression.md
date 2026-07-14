@@ -16,7 +16,7 @@ units:
 
 ## Summary
 
-The first learning algorithm in the course: fit a **linear** [[Hypothesis]] to continuous data. Running example — predict house **price** from house **size** (real Portland, OR Craigslist dataset, $m = 49$ examples, sq ft → price in \$1000s). The training set feeds a learning algorithm that outputs a hypothesis $h$, which maps a new house's size to a predicted price.
+The first learning algorithm in the course: fit a **linear** [[Hypothesis]] to continuous data. Running example - predict house **price** from house **size** (real Portland, OR Craigslist dataset, $m = 49$ examples, sq ft → price in \$1000s). The training set feeds a learning algorithm that outputs a hypothesis $h$, which maps a new house's size to a predicted price.
 
 An ML algorithm decomposes into three separable roles:
 
@@ -26,7 +26,7 @@ An ML algorithm decomposes into three separable roles:
 | **objective** | the [[Cost function]] $J(\theta)$ |
 | **optimizer** | [[Gradient descent]] (finds the best $\theta$) |
 
-The optimizer is **not** part of the algorithm — it's a general tool. Proof: the *normal equations* (later) solve this **same** linear regression with no gradient descent at all. Learn the optimizer once here, reuse it for logistic regression, neural nets, etc.
+The optimizer is **not** part of the algorithm - it's a general tool. Proof: the *normal equations* (later) solve this **same** linear regression with no gradient descent at all. Learn the optimizer once here, reuse it for logistic regression, neural nets, etc.
 
 ## Notation (recurs all quarter)
 

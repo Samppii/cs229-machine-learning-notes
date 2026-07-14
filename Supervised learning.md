@@ -18,10 +18,10 @@ units:
 You are given a dataset of inputs $X$ **and** their labels $Y$, and you learn a mapping (hypothesis) $h: X \to Y$. The defining feature: the "right answers" $Y$ are provided during training.
 
 Two flavors, split by the type of $Y$:
-- [[Regression]] — $Y$ is continuous.
-- [[Classification]] — $Y$ is discrete.
+- [[Regression]] - $Y$ is continuous.
+- [[Classification]] - $Y$ is discrete.
 
-$X$ is usually multi-dimensional — see [[Features]]. Algorithms named for later lectures: gradient descent, logistic regression, SVMs + kernels, neural nets + backpropagation.
+$X$ is usually multi-dimensional - see [[Features]]. Algorithms named for later lectures: gradient descent, logistic regression, SVMs + kernels, neural nets + backpropagation.
 
 ## Notes
 
