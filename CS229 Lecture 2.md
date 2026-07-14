@@ -57,6 +57,10 @@ Linear regression = **model + objective**. Gradient descent = a general **optimi
 
 The structure this lecture sets up, reused all quarter: **model (hypothesis) + objective (cost) + optimizer = a supervised learning algorithm.** The model and cost change per algorithm; the optimizer (gradient descent) is the reusable tool.
 
+## Code practice
+
+Implemented this lecture from scratch in numpy: [[Lecture_2_Linear_Regression_Code_Practice]] (in `CodePractice/`). Toy data ($y = 5 + 2x + \text{noise}$), the [[Cost function]], [[Batch gradient descent]], [[Stochastic gradient descent]], and the [[Normal equations]] - all recovering $\theta \approx [5, 2]$. The math-to-numpy mapping (shapes, why `X.T` in the gradient, when `@` sums vs when you need `.sum()`) lives in [[CS229 Lecture 2 Code Cheatsheet]].
+
 ## Threads to later lectures
 
 - **Why** squared error? Squared error ↔ a Gaussian assumption; linear regression is a special case of **GLMs** - next lecture justifies the cost.
