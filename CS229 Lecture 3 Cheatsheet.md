@@ -1,6 +1,4 @@
-# CS229 Lecture 3 Cheatsheet - LWR + Probabilistic Interpretation
-
-> **STATUS: INCOMPLETE (Part 1 of 2).** Logistic regression + Newton's method (Arc 3) still to be added.
+# CS229 Lecture 3 Cheatsheet - LWR + Probabilistic Interpretation + Logistic Regression
 
 Condensed quick-reference for [[CS229 Lecture 3]]. For the linear-algebra machinery see [[CS229 Math Cheatsheet]].
 
@@ -22,6 +20,20 @@ Condensed quick-reference for [[CS229 Lecture 3]]. For the linear-algebra machin
 - **Punchline:** maximize likelihood under Gaussian IID noise = minimize squared error = $J(\theta)$. The squared-error [[Cost function]] is the MLE under Gaussian noise, not arbitrary.
 - **[[Maximum likelihood estimation]] recipe:** (1) assume $p(y \mid x; \theta)$, (2) write the likelihood, (3) maximize via the log. (Reused for logistic regression.)
 
-## Logistic regression + Newton's method
+## [[Logistic regression]] (classification, $y \in \{0, 1\}$)
 
-**TO BE ADDED** - Arc 3 not yet covered (classification, sigmoid $g(z) = 1/(1+e^{-z})$, Bernoulli likelihood + MLE, gradient ascent, Newton's method).
+- **Why not linear regression:** outliers swing the boundary; outputs go outside $[0, 1]$.
+- **[[Sigmoid function|Sigmoid]]:** $g(z) = 1/(1 + e^{-z})$, output in $(0, 1)$. Derivative: $g'(z) = g(z)(1 - g(z))$.
+- **Hypothesis:** $h_\theta(x) = g(\theta^T x)$ = probability that $y = 1$.
+- **[[Bernoulli distribution|Bernoulli]]:** $p(y \mid x; \theta) = h^{y}(1 - h)^{1-y}$ (exponents switch on/off for $y = 1$ / $y = 0$).
+- **Cost (from MLE):** $\ell(\theta) = \sum_i \left[ y^{(i)}\log h + (1 - y^{(i)})\log(1 - h)\right]$ = [[Cross-entropy]].
+- **Optimizer:** [[Gradient ascent]] (maximize likelihood -> **plus** sign): $\theta_j := \theta_j + \alpha\sum_i (y^{(i)} - h)\,x_j^{(i)}$.
+- **Note:** update has the same (error) x (feature) form as [[Linear regression]] (preview of GLMs). No closed-form / [[Normal equations|normal equation]].
+
+## [[Newton's method]] (fast optimizer)
+
+- **Idea:** find where $\ell'(\theta) = 0$ (the maximum) using tangent-line jumps.
+- **Scalar:** $\theta := \theta - \ell'(\theta)/\ell''(\theta)$ (first deriv / second deriv).
+- **Vector:** $\theta := \theta + H^{-1}\nabla_\theta\ell$, where $H$ = [[Hessian]] (from [[CS229 PS0 - Solutions]]).
+- **[[Quadratic convergence]]:** correct digits roughly double each step (~10 iterations).
+- **Tradeoff:** few iterations but each is expensive (invert the Hessian). Use for FEW params (~10-50); use [[Gradient descent]] for MANY params (thousands+).

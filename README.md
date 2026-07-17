@@ -8,7 +8,7 @@ Each lecture is broken down into small atomic notes (one concept each) plus a le
 
 - **Lecture 1, Introduction:** what machine learning is, the main paradigms (supervised, unsupervised, and reinforcement learning, learning theory, deep learning), and the core vocabulary (regression, classification, clustering, features).
 - **Lecture 2, Linear Regression:** the hypothesis, the least squares cost function, gradient descent (batch, stochastic, and mini-batch), convexity, and the normal equations closed form solution. Also implemented from scratch in numpy (see below).
-- **Lecture 3, Locally Weighted Regression and the Probabilistic Interpretation (in progress, Part 1 of 2):** locally weighted regression with its distance-based weights and bandwidth, parametric versus non-parametric models, and why least squares is not arbitrary (Gaussian noise plus maximum likelihood estimation derives the squared error cost). Logistic regression and Newton's method still to come.
+- **Lecture 3, Locally Weighted Regression, the Probabilistic Interpretation, and Logistic Regression:** locally weighted regression with its distance-based weights and bandwidth, parametric versus non-parametric models, why least squares is not arbitrary (Gaussian noise plus maximum likelihood estimation derives the squared error cost), and the first classifier, logistic regression (the sigmoid, the Bernoulli likelihood, gradient ascent, and Newton's method with its quadratic convergence).
 
 More lectures will be added as I work through the course.
 
