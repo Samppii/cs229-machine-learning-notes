@@ -160,6 +160,10 @@ $$\theta^{t+1} := \theta^t + H^{-1}\nabla_\theta \ell(\theta)$$
 
 Andrew: next lecture (GLMs) is given by a TA (Anand) because Andrew is in Washington DC; he returns the following week. GLMs will show that [[Linear regression]] and [[Logistic regression]] are both special cases of one broader framework (the exponential family), and will derive the sigmoid from more basic principles.
 
+## Problem set
+
+The Lecture 3 theory is put into practice in [[CS229 PS1 - Problem 5 LWR]]: deriving the weighted [[Normal equations]], reading LWR as [[Maximum likelihood estimation]] with per-example variance, then implementing and tuning [[Bandwidth]] $\tau$. The numpy patterns used there are collected in [[NumPy Matplotlib Cheatsheet]].
+
 ## Notes in this lecture
 
 ![[Unit Preview.base]]

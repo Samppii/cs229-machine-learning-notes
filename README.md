@@ -12,6 +12,13 @@ Each lecture is broken down into small atomic notes (one concept each) plus a le
 
 More lectures will be added as I work through the course.
 
+## Problem sets
+
+Worked solutions to the course problem sets, kept as their own hub notes.
+
+- **PS0, Linear Algebra and Matrix Calculus:** gradients and Hessians, positive semi-definite matrices, and eigenvalues and the spectral theorem.
+- **PS1, Problem 5, Locally Weighted Regression (in progress):** deriving the weighted normal equations, reading locally weighted regression as maximum likelihood estimation with per-example variance, and a numpy implementation. Parts (a) and (b) are done; the bandwidth sweep in part (c) is still to come.
+
 ## Code practice
 
 Alongside the notes, I implement each lecture's algorithms from scratch in numpy to connect the math to code. These live in the `CodePractice/` folder as Jupyter notebooks, each paired with a math-to-code cheat sheet.
