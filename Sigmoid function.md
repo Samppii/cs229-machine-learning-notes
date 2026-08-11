@@ -26,4 +26,4 @@ $$g(z) = \frac{1}{1 + e^{-z}}$$
 - Passing $\theta^T x$ through it bounds the hypothesis to $(0, 1)$ so it reads as a probability.
 - **Useful derivative property** (used in the gradient derivation): $g'(z) = g(z)\left(1 - g(z)\right)$.
 
-Many functions map to $(0, 1)$; the sigmoid is chosen because it falls out of the broader class of **generalized linear models** (GLMs), covered next lecture.
+Many functions map to $(0, 1)$; the sigmoid is chosen because it falls out of the broader class of [[Generalized linear models]] (GLMs), covered next lecture. Specifically, it is what you get by inverting the [[Natural parameter]] of the [[Bernoulli distribution]] in [[Exponential family]] form - see [[CS229 Lecture 4]]. Nobody chose it.

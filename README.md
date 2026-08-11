@@ -10,6 +10,8 @@ Each lecture is broken down into small atomic notes (one concept each) plus a le
 - **Lecture 2, Linear Regression:** the hypothesis, the least squares cost function, gradient descent (batch, stochastic, and mini-batch), convexity, and the normal equations closed form solution. Also implemented from scratch in numpy (see below).
 - **Lecture 3, Locally Weighted Regression, the Probabilistic Interpretation, and Logistic Regression:** locally weighted regression with its distance-based weights and bandwidth, parametric versus non-parametric models, why least squares is not arbitrary (Gaussian noise plus maximum likelihood estimation derives the squared error cost), and the first classifier, logistic regression (the sigmoid, the Bernoulli likelihood, gradient ascent, and Newton's method with its quadratic convergence).
 
+- **Lecture 4, Generalized Linear Models:** the perceptron and why it has no probabilistic footing, the exponential family and how to massage a distribution into its template (Gaussian, Bernoulli, Poisson), which is where the sigmoid actually comes from, generalized linear models and the single update rule every one of them shares, and softmax regression with the cross entropy loss for multi-class problems. Taught by a TA (Anand) while Andrew Ng was away.
+
 More lectures will be added as I work through the course.
 
 ## Problem sets
